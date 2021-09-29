@@ -1,0 +1,97 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workout-log {
+  width: 600px;
+}
+
+.form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.form__item {
+  flex: 1 1 33.3333%;
+}
+
+.form__item + .form__item {
+  margin-left: 20px;
+}
+
+.form__input {
+  width: 238px;
+  height: 30px;
+  border: 1px solid black;
+  padding: 0 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.form__btn {
+  height: 30px;
+  border: 1px solid black;
+  padding: 0 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+
+.journal {
+  margin-top: 30px;
+}
+
+.journal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+  padding: 0 20px;
+}
+
+.journal__item {
+  flex: 1 1 33.333%;
+  text-align: center;
+}
+
+.journal__main {
+  border: 1px solid black;
+  border-radius: 20px;
+
+  padding: 15px;
+}
+
+.journal__main-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.journal__main-row + .journal__main-row {
+  margin-top: 15px;
+}
+
+.journal__item-edit {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url(../src/img/pencil.png) center center / contain no-repeat;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.journal__item-delete {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url(../src/img/cancel.png) center center / contain no-repeat;
+  cursor: pointer;
+}
